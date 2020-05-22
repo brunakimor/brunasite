@@ -1,0 +1,133 @@
+/* reset css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('../img/fundo2.jpeg');
+    background-size: auto 200vh;
+    font-family: 'Cutive Mono', monospace;
+    height: 100vh;
+  }
+  
+  /* se a tela tiver pelomenos 400px vai carregar estes estilos*/
+  @media (min-width: 300px) {
+    body {
+      font-size: 14px;
+
+    }
+    /* breakpoint que ta bugando
+    @media (min-width: 800px) {
+      body {font-size: 24px;
+      }
+      */
+
+  header {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu{
+    background-color: lightsalmon;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .menu a {
+    background-color: lightsalmon;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  .menu li{
+    list-style: none;
+  }
+  a{
+    color: #483D8B;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color: #483D8B;
+    text-align: center;
+  }
+  .site-title {
+    font-size: 4em;
+    font-family: 'Nanum Myeongjo', serif;
+  }
+  .site-subtitle {
+    font-style: italic;
+    line-height: 1.8em;
+    font-family: 'Cutive Mono', monospace;
+    color: bisque;
+  }
+  .portfolio {
+    background-color:;
+    padding: 2em;
+    height: 100vh;
+    text-align: center;
+  }
+   
+
+  .portfolio h2 {
+    font-family: 'Cutive Mono', monospace;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    color: #483D8B;
+  }
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+  }
+  @media (min-width: 524px) {
+    .portfolio .grid {
+      grid-template-columns: 230px 230px; 
+      align-content: center;
+      justify-content: center;
+    }
+  }
+  @media (min-width: 830px) {
+    .portfolio .grid {
+      grid-template-columns: 230px 230px; 
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 48px - 4em);
+    }
+  }
+  /* se quiser aumentar o numero de colunas de img
+  @media (min-width: 830px) {
+    .portfolio .grid {
+      grid-template-columns: 230px 230px 230px; 
+    }
+  }
+  @media (min-width: 1070px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(4, 230px) ; 
+    }
+    */
+  }
+  .portfolio figure {
+    text-align: center;
+  }
+
+  .img-portfolio {
+    width: 230px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 1px;
+  }
+ 
+  
+
